@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Changed font to Poppins */
+  background-image: url('4.jpg');
+  background-size: cover;
+  background-position: top center;
+}
+
+.app-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+}
+
+.weather-container {
+  max-width: 400px;
+  width: 100%; /* Ensuring the container takes full width */
+  padding: 30px; /* Increased padding for more space */
+  border-radius: 10px; /* Increased border radius for a softer look */
+  background-color: rgba(255, 255, 255, 0.9); /* Soft white background */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Added stronger box shadow for depth */
+  text-align: center; /* Center aligning text */
+  margin: 0 auto; /* Centering the container */
+}
+
+.search-form {
+  margin-bottom: 30px; /* Increased margin for more separation */
+}
+
+.search-input {
+  width: 70%; /* Reduced input width for better balance */
+  padding: 15px; /* Increased padding for input */
+  font-size: 18px; /* Increased font size for better readability */
+  border: none;
+  border-radius: 25px; /* Rounded input */
+  background-color: #f0f0f0; /* Light gray background */
+  margin-bottom:8px;
+}
+
+.search-button {
+  width: 40%; /* Adjusted button width for better balance */
+  padding: 15px; /* Increased padding for button */
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 25px; /* Rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+}
+
+.weather-info {
+  margin-top: 30px; /* Increased margin for more separation */
+}
+
+.weather-info h2 {
+  margin-bottom: 20px; /* Increased margin for more separation */
+  font-size: 24px; /* Increased font size for better emphasis */
+  color: #333; /* Darkened text color for better readability */
+}
+
+.weather-info p {
+  margin: 10px 0; /* Increased margin for more separation */
+  font-size: 20px; /* Increased font size for better readability */
+  color: #000000; /* Adjusted text color for better readability */
+}
+
+.warning-banner {
+  background-color: #ff4d4d;
+  /* Red color */
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 25px; /* Rounded banner */
+  animation: pulse 1s infinite alternate;
+  /* Shining effect */
+}
+
+@keyframes pulse {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
