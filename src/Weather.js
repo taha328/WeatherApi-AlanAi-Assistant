@@ -3,6 +3,7 @@ import axios from 'axios';
 import alanBtn from '@alan-ai/alan-sdk-web';
 import { WiThermometer, WiCloud, WiHumidity, WiBarometer, WiStrongWind } from 'react-icons/wi';
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 const Weather = () => {
     const [city, setCity] = useState('');
@@ -92,6 +93,8 @@ const Weather = () => {
                     <p>Warning: Temperature above 10°C. Be cautious!</p>
                 </div>
             )}
+            <Link to="/health-info">Please fill out your health survey.</Link>
+            
         </div>
     );
 };

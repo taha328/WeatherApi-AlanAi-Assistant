@@ -1,0 +1,42 @@
+.all {
+  margin-top: 100px;
+  text-align: center;
+  position: relative;
+}
+
+.contact-info, .contact-form {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  box-shadow: none !important;
+}
+
+.contact-form button, .btn-toggle {
+  background-color: rgb(250, 78, 78) !important;
+  color: rgb(255, 255, 255) !important;
+  font-weight: bold !important;
+  box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.contact-form button:hover, .btn-toggle:hover {
+  background-color: gray !important;
+}
+
+.contact-info a {
+  text-decoration: none !important;
+  color: rgb(155, 13, 168) !important;
+  font-size: 18px;
+}
+
+.btn-toggle {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
